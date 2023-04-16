@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logical Operators</title>
+</head>
+<body>
+  <script>
+    // alert(null || 2 || undefined);
+    // alert( alert(1) || 2 || alert(3));
+    // alert(1 && null && 2);
+    // alert(alert(1) && alert(2));
+    // alert(null || 2 && 3 || 4);
+    // let age = 20;
+    // if (age >= 14 && age <= 90) {
+    //   console.log(`You're between 14 and 90`);
+    // }
+    // if (!(age >= 14 && age <= 90)) {
+    //   console.log(`You're not between 14 and 90`);
+    // }
+    // if (age < 14 || age > 90) {
+    //   console.log(`You're not between 14 and 90`);
+    // }
+    // if (-1 || 0) alert('first');
+    // if (-1 && 0) alert('second');
+    // if (null || -1 && 1) alert('third');
+    let user = prompt("Who's there?", "");
+    if (user === 'Admin') {
+      let passwd = prompt("Password?", "");
+      if (passwd === "TheMaster") {
+        alert("Welcome!");
+      } else if (passwd === null || passwd === "") {
+        alert("Canceled")
+      } else {
+        alert("Wrong password");
+      }
+    } else if (user === null || user === "") {
+      alert("Cancelled")
+    } else {
+      alert("I don't know you");
+    }
+  </script>
+</body>
+</html>
