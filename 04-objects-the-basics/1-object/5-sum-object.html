@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sum Objects</title>
+</head>
+
+<body>
+  <script>
+    function sumObjects(obj) {
+      salaries = 0;
+      for (let key in obj) {
+        salaries += obj[key];
+      }
+      return salaries;
+    }
+
+    let salaries = {
+      John: 100,
+      Add: 160,
+      Pete: 130,
+    }
+
+    alert(sumObjects(salaries));
+  </script>
+</body>
+
+</html>
